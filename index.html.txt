@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soydan ve Güneş’in Yıldızı</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Georgia', serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* FULL SCREEN STAR MAP */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("starmap.jpg") center center / cover no-repeat;
+}
+
+/* DARK OVERLAY (çok hafif) */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+
+/* TEXT OVERLAY */
+.content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* TITLE */
+.title {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+/* DATE */
+.date {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* SCROLL SECTION */
+.section {
+  background: #000;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* MUSIC */
+.music {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.music a {
+  color: #ffd6ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* NOTE TEXT */
+.note {
+  white-space: pre-line;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #eaeaea;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 13px;
+  opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO / STAR MAP -->
+<div class="hero">
+  <div class="content">
+    <div>
+      <div class="title">Soydan ve Güneş’in Yıldızı</div>
+    </div>
+
+    <div class="date">4 Eylül 2025 · 00.15–00.20</div>
+  </div>
+</div>
+
+<!-- SCROLL CONTENT -->
+<div class="section">
+
+  <div class="music">
+    🎧 <a href="https://open.spotify.com/search/star%20shopping%20lil%20peep" target="_blank">
+      Lil Peep – Star Shopping
+    </a>
+  </div>
+
+  <div class="note">
+Yıldızlar, gökyüzü, benim için hep çok gizemli olmuştur. Gökyüzünü görebileceğim bir yerdeysem kafam hep yukarda olur ve izlerim. Yıldızlar bana seni anımsatıyor.. Eşsiz güzellik ve sonsuza kadar izlenebilme potansiyeliyle beraber.
+
+“look at the sky tonight, all the stars have a reason, reason to shine”
+
+Bu yıldızın parlama sebebi biziz,hiç sönmeyecek. Bu yıldız bizim adımıza, bizi anlatıyor. Sevgili olduğumuz gün ve saatte gökteki en parlak yıldız buymuş. Bizim yıldımız. Bizim için parlamış. En az onun kadar parlak, ihtişamlı, gizemli, sonsuz aşkımızı gösteriyor. Ben sevgili olduğumuzu itiraf ettiğim dakikalarda böyleymiş. Nihayet demiş yıldız. Yıllardır burdayım ve sizi bekledim, birbirinizi bulmanızı ve aşkınızı keşfetmenizi. Keşfetmek evet çünkü bu aşk, kader. Şans değil, hiçbir şans böylesine güzel olamaz. Bizim kaderimiz belli ki zaten çizilmiş ve yazılmış ve çok şükür ki yaşıyoruz. Boşa geçen senelerimizin acılarını çıkaracağımız nice senelerin olucağının ilk seneti bu gündü, 4 Eylül. Sonsuz senet ve şahit de yıldızımız. 14 Şubatımız kutlu olsun bebeğim, ama seninleyken her gün bizim günümüz..🤍
+  </div>
+
+  <footer>
+    Bu site sadece Soydan & Güneş için hazırlandı.
+  </footer>
+
+</div>
+
+</body>
+</html>
