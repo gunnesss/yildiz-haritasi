@@ -6,94 +6,38 @@
 <title>Soydan ve Güneş’in Yıldızı</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-body, html {
-  height: 100%;
-  font-family: 'Georgia', serif;
-  color: #ffffff;
-  overflow-x: hidden;
+body {
+    background-image: url("starmap.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    font-family: "Georgia", serif;
 }
 
-/* FULL SCREEN STAR MAP */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("starmap.jpg") center center / cover no-repeat;
+h1 {
+    margin-top: 40px;
+    font-size: 36px;
 }
 
-/* DARK OVERLAY (çok hafif) */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.25);
-}
-
-/* TEXT OVERLAY */
-.content {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-/* TITLE */
-.title {
-  font-size: 36px;
-  letter-spacing: 1px;
-}
-
-/* DATE */
-.date {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* SCROLL SECTION */
-.section {
-  background: #000;
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* MUSIC */
-.music {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.music a {
-  color: #ffd6ff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* NOTE TEXT */
-.note {
-  white-space: pre-line;
-  line-height: 1.7;
-  font-size: 16px;
-  color: #eaeaea;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 13px;
-  opacity: 0.5;
+.footer {
+    margin-bottom: 30px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 </style>
 </head>
@@ -136,3 +80,9 @@ Bu yıldızın parlama sebebi biziz,hiç sönmeyecek. Bu yıldız bizim adımız
 
 </body>
 </html>
+<h1>Soydan ve Güneş’in Yıldızı</h1>
+
+<div class="footer">
+4 Eylül 2025 • 00.15–00.20
+</div>
+
